@@ -30,4 +30,10 @@ def sort_by_selection2(items: list):
         sorted.append(items.pop(min_idx))
     return sorted
 
-    
+
+def test_selection_sort():
+    list = [3, 2, 1, 4, 5, 1, 3]
+
+    print(f"List: {list}")
+    # print(f"Sorted list: {sort_by_selection(list)}")
+    print(f"Sorted list: {sort_by_selection2(list)}")
