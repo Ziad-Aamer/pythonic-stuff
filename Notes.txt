@@ -1,0 +1,11 @@
+
+
+#Chapter 4 (Quicksort):
+* Quick sort is a divide and conquer algorithm that:
+    -O(nlogn) average case
+    -O(n^2) worst case
+    -But it is faster than mergesort, which is O(nlogn), as It has smaller constant factor than mergesort.
+    -Faster in practice than mergesort, as it hits the average case way more than the worst case.
+    -In Quicksort, the best case is also the average case.
+
+* If you always choose a random element in the array as the pivot (is it the middle element?)
