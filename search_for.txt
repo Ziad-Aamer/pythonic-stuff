@@ -1,0 +1,7 @@
+
+#hash function (and security)
+-SHA function (secure hashing algorithm), one change in the input changes the output entirely 
+    (avalanche effect)
+
+*Encryption vs. Hashing:
+    Encryption is a 2 way (can decrypt output), while hashing is one-way (can't decrypt output)
