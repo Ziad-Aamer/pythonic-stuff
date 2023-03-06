@@ -3,6 +3,10 @@ BFS USAGE:
     *Checks if there's a path from A to B
     *Finds you the shortest path from A to B (unweighted edges)
 
+COMPLEXITY:
+    O(V+E)
+        - V: for number of vertices (number of persons added to the queue).
+        - E: for number of edges (connection of people)
 """
 from collections import deque
 
@@ -12,8 +16,7 @@ def person_is_seller(name):
     # return name[-1] == 'm'
 
 
-# O(V+E) (V for number of vertices (number of persons added to the queue),
-#       E for number of edges (connection of people))
+
 def bfs(graph, root):
     search_queue = deque()
     search_queue += graph[root]
