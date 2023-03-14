@@ -8,13 +8,18 @@ COMPLEXITY:
         - V: for number of vertices (number of persons added to the queue).
         - E: for number of edges (connection of people)
 """
+
+"""
+Topological sort: a way to make an ordered list out of a graph.
+    Ex: If you have a list of tasks to do, you topologically sort them in the graph.
+        This will give you the list of tasks to do in order. (prerequisites, parallel vs. sequential) 
+"""
 from collections import deque
 
 
 def person_is_seller(name):
     return name == 'you'
     # return name[-1] == 'm'
-
 
 
 def bfs(graph, root):
