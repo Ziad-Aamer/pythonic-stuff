@@ -9,3 +9,13 @@
     -In Quicksort, the best case is also the average case.
 
 * If you always choose a random element in the array as the pivot (is it the middle element?)
+ 
+
+ #Chapter 5 (Hashing):
+
+ * Hash tables uses an array with linked list for each slot (to handle collisions):
+    -We need to keep low factor in the array (elements in the array/total slots)
+    -When the load factor grows (more than 0.7), 
+        we do resizing to the array by moving it to a bigger one (size*2)
+    -A good technique is to initialize the hash table (or array) by the max expected size to avoid resizing
+    -
