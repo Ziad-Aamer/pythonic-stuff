@@ -22,3 +22,14 @@ source .venv/bin/activate
 # exit the environment
 deactivate
 ```
+
+### Conda
+
+```
+# List available environments
+conda env list
+
+# Activate
+conda activate my_env
+
+```
