@@ -1,4 +1,4 @@
-# __getitem__ importance
+# namedtuple, __getitem__ importance
 
 import collections
 
@@ -9,7 +9,7 @@ Card = collections.namedtuple(typename='Card', field_names=['rank', 'suit'])
 sample_card7 = Card('7', 'diamonds')
 print(sample_card7)
 
-class FrenchDech:
+class FrenchDeck:
     ranks = [str(n) for n in range(2, 11)] + list('JQKA') # deck of one suit 2-10, Jack, Queen, King and Ace
     suits = 'spades diamond clubs hearts'.split()
     
@@ -24,7 +24,7 @@ class FrenchDech:
     def __getitem__(self, position):
         return self._cards[position]
 
-deck = FrenchDech()
+deck = FrenchDeck()
 print(len(deck)) # As we defined __len__ method
 print(deck[0]) # __getitem__ method
 
